@@ -1,4 +1,4 @@
-date,binary_target_net_income,proba_class_0,proba_class_1,margin_proba,window,cid
+date,binary_target_net_income,prob_down,prob_up,net_prob_score,window,cid
 2023-02-16,1,0.5710033,0.42899665,-0.14200667,2019-2024,MISSING
 2023-03-10,1,0.7376751,0.26232496,-0.4753501,2019-2024,MISSING
 2023-05-04,0,0.48285446,0.5171455,0.03429106,2019-2024,MISSING
