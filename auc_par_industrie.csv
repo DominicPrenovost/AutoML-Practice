@@ -1,61 +1,75 @@
 industry_raw,AUC,Count
-Aerospace & Defense,0.9017857142857143,36
-Air Freight & Logistics,,8
-Automobile Components,0.5909090909090909,37
-Banks,0.8160377358490567,65
-Beverages,0.7,7
-Biotechnology,0.16666666666666663,10
-Broadline Retail,0.2363636363636364,16
-Capital Markets,0.6767213114754098,86
-Chemicals,0.6875,55
-Commercial Services & Supplies,0.6314516129032259,82
-Communications Equipment,0.606060606060606,14
-Construction & Engineering,0.7275132275132276,41
-Consumer Finance,0.7142857142857142,16
-Consumer Staples Distribution & Retail,0.7659574468085106,51
-Containers & Packaging,0.46874999999999994,42
-Distributors,,1
-Diversified Consumer Services,0.30000000000000004,11
-Diversified REITs,0.6065934065934067,48
-Diversified Telecommunication Services,0.48,27
-Electric Utilities,0.2666666666666666,23
-Electrical Equipment,0.5,17
-"Electronic Equipment, Instruments & Components",0.75,18
-Energy Equipment & Services,0.6825806451612904,131
-Entertainment,0.4,11
-Financial Services,0.5085714285714286,57
-Food Products,0.7205882352941178,46
-Gas Utilities,0.7916666666666666,16
-Ground Transportation,0.3763440860215054,34
-Health Care Equipment & Supplies,0.75,5
-Health Care Providers & Services,0.7126099706744868,42
-Health Care REITs,1.0,7
-"Hotels, Restaurants & Leisure",0.8022727272727272,42
-IT Services,0.7653846153846153,36
-Independent Power & Renewable Electricity Producers,0.6264880952380952,62
-Industrial REITs,0.8250000000000001,14
-Insurance,0.7945344129554656,71
-Leisure Products,,16
-Machinery,0.8609467455621302,39
-Marine Transportation,,7
-Media,0.7067307692307692,34
-Metals & Mining,0.6699708454810496,413
-Multi-Utilities,0.3361344537815126,24
-Office REITs,0.17857142857142855,16
-"Oil, Gas & Consumable Fuels",0.5932484208346278,362
-Paper & Forest Products,0.585,45
-Passenger Airlines,0.6574074074074076,24
-Personal Care Products,,8
-Pharmaceuticals,0.7857142857142857,50
-Professional Services,0.5185185185185186,30
-Real Estate Management & Development,0.7534584980237153,111
-Residential REITs,0.6923076923076924,37
-Retail REITs,0.5949074074074074,62
-Software,0.7193129451193968,108
-Specialized REITs,,7
-Specialty Retail,0.8262411347517731,53
-"Textiles, Apparel & Luxury Goods",0.7692307692307692,16
-Thrifts & Mortgage Finance,0.0,7
-Trading Companies & Distributors,0.4853801169590643,60
-Transportation Infrastructure,0.125,13
-Wireless Telecommunication Services,0.5,9
+Aerospace & Defense,0.6266634209672184,314
+Air Freight & Logistics,0.6051282051282052,49
+Automobile Components,0.5789455110107283,337
+Beverages,0.5730757711889787,179
+Biotechnology,0.6327586206896552,249
+Broadline Retail,0.6523435494635248,280
+Building Products,0.8771929824561404,41
+Capital Markets,0.6558574796213985,888
+Chemicals,0.6551920465992205,612
+Commercial Services & Supplies,0.6360016009605762,643
+Communications Equipment,0.6600614856951649,622
+Construction & Engineering,0.6530514431781873,393
+Construction Materials,0.75,13
+Consumer Finance,0.6590909090909091,40
+Consumer Staples Distribution & Retail,0.5876782575897407,706
+Containers & Packaging,0.5852238354506956,326
+Distributors,0.6333819241982507,77
+Diversified Consumer Services,0.6891534391534392,109
+Diversified REITs,0.6632026283836869,671
+Diversified Telecommunication Services,0.5424697538589903,311
+Electric Utilities,0.6487128712871287,226
+Electrical Equipment,0.5818181818181818,71
+"Electronic Equipment, Instruments & Components",0.6454086681179496,287
+Energy Equipment & Services,0.5737151022765066,1487
+Entertainment,0.3014354066985646,41
+Financial Services,0.6202633573323229,298
+Food Products,0.6424647007972337,649
+Gas Utilities,0.7639432485322897,129
+Ground Transportation,0.6166525781910397,379
+Health Care Equipment & Supplies,0.6137254901960785,77
+Health Care Providers & Services,0.6909321642824182,329
+Health Care REITs,1.0,5
+"Hotels, Restaurants & Leisure",0.6210468920392584,451
+Household Durables,0.6939393939393941,103
+Household Products,0.7333333333333333,8
+IT Services,0.5588235294117647,197
+Independent Power & Renewable Electricity Producers,0.6986514675206394,741
+Industrial Conglomerates,,5
+Industrial REITs,0.6666666666666667,10
+Insurance,0.659000730917824,680
+Interactive Media & Services,0.19999999999999996,23
+Internet & Direct Marketing Retail,0.47777777777777775,21
+Internet Software & Services,0.701123595505618,164
+Leisure Products,0.7086474501108648,96
+Life Sciences Tools & Services,0.7004830917874396,41
+Machinery,0.5766512212361581,559
+Marine Transportation,0.6332417582417582,54
+Media,0.6907785270163762,1038
+Metals & Mining,0.670281298314467,4932
+Multi-Utilities,0.6197716232414359,252
+Office REITs,0.4,12
+"Oil, Gas & Consumable Fuels",0.6834587815236677,5409
+Paper & Forest Products,0.6781927610652585,879
+Passenger Airlines,0.6751231527093596,314
+Personal Care Products,0.6935483870967742,66
+Pharmaceuticals,0.7162505779010633,332
+Professional Services,0.6372628726287263,172
+Real Estate,0.6655982905982906,102
+Real Estate Investment Trusts (REITs),0.6276697177726926,845
+Real Estate Management & Development,0.6377409475770133,821
+Residential REITs,0.6263736263736265,27
+Retail REITs,0.6418918918918919,45
+Semiconductors & Semiconductor Equipment,0.7439024390243902,51
+Software,0.5991918681734958,572
+Specialized REITs,,5
+Specialty Retail,0.643678871845621,579
+"Technology Hardware, Storage & Peripherals",0.962962962962963,18
+"Textiles, Apparel & Luxury Goods",0.662878787878788,158
+Thrifts & Mortgage Finance,0.6630910878698489,212
+Tobacco,0.8758169934640523,26
+Trading Companies & Distributors,0.5530944989792209,535
+Transportation Infrastructure,0.5906183368869936,123
+Undefined,0.7654320987654321,48
+Wireless Telecommunication Services,0.7200168918918919,101
