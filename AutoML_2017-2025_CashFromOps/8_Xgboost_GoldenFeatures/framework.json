@@ -1,0 +1,2371 @@
+{
+    "uid": "482f3dcf-5be7-46b5-b9a0-c21c3952a553",
+    "name": "8_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_pref_equity_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6718366434
+                    },
+                    {
+                        "feature1": "E_G_ebitda_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6719026349
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6737666183
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6737699047
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6739383614
+                    },
+                    {
+                        "feature1": "E_G_rev_gro_five_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6741808342
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6743035592
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6744081897
+                    },
+                    {
+                        "feature1": "E_G_gross_profit_rgro_1q",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6745396716
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6746657442
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6748322369
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_other_expenses_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6750342514
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6750410617
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.675203593
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_int_div_income_on_rev_ratio",
+                        "operation": "sum",
+                        "score": 0.6753415068
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_restructuring_charges_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754101225
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6754575962
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754909205
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_interest_expense_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6755626521
+                    },
+                    {
+                        "feature1": "E_G_interest_expense_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6757258869
+                    },
+                    {
+                        "feature1": "E_G_r_d_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6758336341
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6759222156
+                    },
+                    {
+                        "feature1": "E_G_receivables_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.676098396
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6762404464
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6764926265
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_agro_4q",
+                        "feature2": "E_G_gross_profit_rgro_1q",
+                        "operation": "diff",
+                        "score": 0.6765603809
+                    },
+                    {
+                        "feature1": "E_G_net_property_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6765700107
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6766655413
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6767834229
+                    },
+                    {
+                        "feature1": "E_G_total_debt_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6768634649
+                    },
+                    {
+                        "feature1": "E_G_divestitures_agro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6769141943
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769267103
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769967423
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6770067588
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_other_expenses_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6770077207
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6770549084
+                    },
+                    {
+                        "feature1": "E_G_ebit_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6770974173
+                    },
+                    {
+                        "feature1": "E_G_receivables_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6771004003
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6771389275
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6772432788
+                    },
+                    {
+                        "feature1": "E_G_total_div_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6773455376
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_tax_expense_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6774202245
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776017729
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_agro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6776087425
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6776913841
+                    },
+                    {
+                        "feature1": "E_G_int_div_income_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776921255
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_total_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6777660492
+                    },
+                    {
+                        "feature1": "E_G_net_property_on_assets_ratio",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "ratio",
+                        "score": 0.6777805596
+                    },
+                    {
+                        "feature1": "E_G_cash_equi_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779153685
+                    },
+                    {
+                        "feature1": "E_G_net_property_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779820522
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678051346
+                    },
+                    {
+                        "feature1": "E_G_tax_expense_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6780529604
+                    },
+                    {
+                        "feature1": "E_G_other_expenses_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6781099341
+                    },
+                    {
+                        "feature1": "E_G_total_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6781751734
+                    },
+                    {
+                        "feature1": "E_G_inventory_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6781800684
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_def_tax_liability_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6781936144
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678275268
+                    }
+                ],
+                "new_columns": [
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_pref_equity_on_assets_ratio",
+                    "E_G_ebitda_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_unusual_items_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_1q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_rev_gro_five_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_pref_equity_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_gross_profit_rgro_1q_sum_E_G_net_debt_agro_4q",
+                    "E_G_pref_equity_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_repurchase_stock_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_other_expenses_agro_1q",
+                    "E_G_def_tax_liability_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_def_tax_liability_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_int_div_income_on_rev_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_restructuring_charges_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_tcgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_interest_expense_on_tot_cap_ratio",
+                    "E_G_interest_expense_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_r_d_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_receivables_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_repurchase_stock_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_agro_4q_diff_E_G_gross_profit_rgro_1q",
+                    "E_G_net_property_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_total_debt_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_divestitures_agro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_def_tax_liability_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_other_expenses_agro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ebit_tcgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_receivables_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_div_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_tax_expense_tcgro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_revenues_agro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_int_div_income_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_total_div_agro_1q",
+                    "E_G_net_property_on_assets_ratio_ratio_E_G_net_debt_agro_4q",
+                    "E_G_cash_equi_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_property_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_tax_expense_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_other_expenses_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_debt_agro_4q_ratio_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_inventory_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_def_tax_liability_tcgro_1q",
+                    "E_G_repurchase_stock_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2017-2025_CashFromOps",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_pref_equity_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6718366434
+                    },
+                    {
+                        "feature1": "E_G_ebitda_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6719026349
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6737666183
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6737699047
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6739383614
+                    },
+                    {
+                        "feature1": "E_G_rev_gro_five_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6741808342
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6743035592
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6744081897
+                    },
+                    {
+                        "feature1": "E_G_gross_profit_rgro_1q",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6745396716
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6746657442
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6748322369
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_other_expenses_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6750342514
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6750410617
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.675203593
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_int_div_income_on_rev_ratio",
+                        "operation": "sum",
+                        "score": 0.6753415068
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_restructuring_charges_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754101225
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6754575962
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754909205
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_interest_expense_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6755626521
+                    },
+                    {
+                        "feature1": "E_G_interest_expense_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6757258869
+                    },
+                    {
+                        "feature1": "E_G_r_d_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6758336341
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6759222156
+                    },
+                    {
+                        "feature1": "E_G_receivables_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.676098396
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6762404464
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6764926265
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_agro_4q",
+                        "feature2": "E_G_gross_profit_rgro_1q",
+                        "operation": "diff",
+                        "score": 0.6765603809
+                    },
+                    {
+                        "feature1": "E_G_net_property_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6765700107
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6766655413
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6767834229
+                    },
+                    {
+                        "feature1": "E_G_total_debt_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6768634649
+                    },
+                    {
+                        "feature1": "E_G_divestitures_agro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6769141943
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769267103
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769967423
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6770067588
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_other_expenses_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6770077207
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6770549084
+                    },
+                    {
+                        "feature1": "E_G_ebit_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6770974173
+                    },
+                    {
+                        "feature1": "E_G_receivables_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6771004003
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6771389275
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6772432788
+                    },
+                    {
+                        "feature1": "E_G_total_div_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6773455376
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_tax_expense_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6774202245
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776017729
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_agro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6776087425
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6776913841
+                    },
+                    {
+                        "feature1": "E_G_int_div_income_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776921255
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_total_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6777660492
+                    },
+                    {
+                        "feature1": "E_G_net_property_on_assets_ratio",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "ratio",
+                        "score": 0.6777805596
+                    },
+                    {
+                        "feature1": "E_G_cash_equi_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779153685
+                    },
+                    {
+                        "feature1": "E_G_net_property_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779820522
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678051346
+                    },
+                    {
+                        "feature1": "E_G_tax_expense_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6780529604
+                    },
+                    {
+                        "feature1": "E_G_other_expenses_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6781099341
+                    },
+                    {
+                        "feature1": "E_G_total_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6781751734
+                    },
+                    {
+                        "feature1": "E_G_inventory_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6781800684
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_def_tax_liability_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6781936144
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678275268
+                    }
+                ],
+                "new_columns": [
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_pref_equity_on_assets_ratio",
+                    "E_G_ebitda_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_unusual_items_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_1q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_rev_gro_five_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_pref_equity_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_gross_profit_rgro_1q_sum_E_G_net_debt_agro_4q",
+                    "E_G_pref_equity_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_repurchase_stock_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_other_expenses_agro_1q",
+                    "E_G_def_tax_liability_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_def_tax_liability_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_int_div_income_on_rev_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_restructuring_charges_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_tcgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_interest_expense_on_tot_cap_ratio",
+                    "E_G_interest_expense_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_r_d_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_receivables_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_repurchase_stock_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_agro_4q_diff_E_G_gross_profit_rgro_1q",
+                    "E_G_net_property_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_total_debt_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_divestitures_agro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_def_tax_liability_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_other_expenses_agro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ebit_tcgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_receivables_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_div_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_tax_expense_tcgro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_revenues_agro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_int_div_income_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_total_div_agro_1q",
+                    "E_G_net_property_on_assets_ratio_ratio_E_G_net_debt_agro_4q",
+                    "E_G_cash_equi_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_property_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_tax_expense_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_other_expenses_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_debt_agro_4q_ratio_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_inventory_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_def_tax_liability_tcgro_1q",
+                    "E_G_repurchase_stock_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2017-2025_CashFromOps",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_pref_equity_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6718366434
+                    },
+                    {
+                        "feature1": "E_G_ebitda_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6719026349
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6737666183
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6737699047
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6739383614
+                    },
+                    {
+                        "feature1": "E_G_rev_gro_five_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6741808342
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6743035592
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6744081897
+                    },
+                    {
+                        "feature1": "E_G_gross_profit_rgro_1q",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6745396716
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6746657442
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6748322369
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_other_expenses_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6750342514
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6750410617
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.675203593
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_int_div_income_on_rev_ratio",
+                        "operation": "sum",
+                        "score": 0.6753415068
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_restructuring_charges_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754101225
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6754575962
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754909205
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_interest_expense_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6755626521
+                    },
+                    {
+                        "feature1": "E_G_interest_expense_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6757258869
+                    },
+                    {
+                        "feature1": "E_G_r_d_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6758336341
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6759222156
+                    },
+                    {
+                        "feature1": "E_G_receivables_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.676098396
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6762404464
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6764926265
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_agro_4q",
+                        "feature2": "E_G_gross_profit_rgro_1q",
+                        "operation": "diff",
+                        "score": 0.6765603809
+                    },
+                    {
+                        "feature1": "E_G_net_property_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6765700107
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6766655413
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6767834229
+                    },
+                    {
+                        "feature1": "E_G_total_debt_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6768634649
+                    },
+                    {
+                        "feature1": "E_G_divestitures_agro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6769141943
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769267103
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769967423
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6770067588
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_other_expenses_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6770077207
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6770549084
+                    },
+                    {
+                        "feature1": "E_G_ebit_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6770974173
+                    },
+                    {
+                        "feature1": "E_G_receivables_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6771004003
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6771389275
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6772432788
+                    },
+                    {
+                        "feature1": "E_G_total_div_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6773455376
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_tax_expense_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6774202245
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776017729
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_agro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6776087425
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6776913841
+                    },
+                    {
+                        "feature1": "E_G_int_div_income_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776921255
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_total_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6777660492
+                    },
+                    {
+                        "feature1": "E_G_net_property_on_assets_ratio",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "ratio",
+                        "score": 0.6777805596
+                    },
+                    {
+                        "feature1": "E_G_cash_equi_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779153685
+                    },
+                    {
+                        "feature1": "E_G_net_property_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779820522
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678051346
+                    },
+                    {
+                        "feature1": "E_G_tax_expense_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6780529604
+                    },
+                    {
+                        "feature1": "E_G_other_expenses_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6781099341
+                    },
+                    {
+                        "feature1": "E_G_total_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6781751734
+                    },
+                    {
+                        "feature1": "E_G_inventory_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6781800684
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_def_tax_liability_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6781936144
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678275268
+                    }
+                ],
+                "new_columns": [
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_pref_equity_on_assets_ratio",
+                    "E_G_ebitda_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_unusual_items_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_1q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_rev_gro_five_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_pref_equity_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_gross_profit_rgro_1q_sum_E_G_net_debt_agro_4q",
+                    "E_G_pref_equity_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_repurchase_stock_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_other_expenses_agro_1q",
+                    "E_G_def_tax_liability_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_def_tax_liability_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_int_div_income_on_rev_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_restructuring_charges_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_tcgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_interest_expense_on_tot_cap_ratio",
+                    "E_G_interest_expense_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_r_d_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_receivables_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_repurchase_stock_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_agro_4q_diff_E_G_gross_profit_rgro_1q",
+                    "E_G_net_property_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_total_debt_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_divestitures_agro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_def_tax_liability_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_other_expenses_agro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ebit_tcgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_receivables_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_div_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_tax_expense_tcgro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_revenues_agro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_int_div_income_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_total_div_agro_1q",
+                    "E_G_net_property_on_assets_ratio_ratio_E_G_net_debt_agro_4q",
+                    "E_G_cash_equi_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_property_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_tax_expense_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_other_expenses_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_debt_agro_4q_ratio_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_inventory_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_def_tax_liability_tcgro_1q",
+                    "E_G_repurchase_stock_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2017-2025_CashFromOps",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_pref_equity_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6718366434
+                    },
+                    {
+                        "feature1": "E_G_ebitda_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6719026349
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6737666183
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6737699047
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6739383614
+                    },
+                    {
+                        "feature1": "E_G_rev_gro_five_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6741808342
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6743035592
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6744081897
+                    },
+                    {
+                        "feature1": "E_G_gross_profit_rgro_1q",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6745396716
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6746657442
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6748322369
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_other_expenses_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6750342514
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6750410617
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.675203593
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_int_div_income_on_rev_ratio",
+                        "operation": "sum",
+                        "score": 0.6753415068
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_restructuring_charges_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754101225
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6754575962
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754909205
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_interest_expense_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6755626521
+                    },
+                    {
+                        "feature1": "E_G_interest_expense_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6757258869
+                    },
+                    {
+                        "feature1": "E_G_r_d_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6758336341
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6759222156
+                    },
+                    {
+                        "feature1": "E_G_receivables_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.676098396
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6762404464
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6764926265
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_agro_4q",
+                        "feature2": "E_G_gross_profit_rgro_1q",
+                        "operation": "diff",
+                        "score": 0.6765603809
+                    },
+                    {
+                        "feature1": "E_G_net_property_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6765700107
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6766655413
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6767834229
+                    },
+                    {
+                        "feature1": "E_G_total_debt_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6768634649
+                    },
+                    {
+                        "feature1": "E_G_divestitures_agro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6769141943
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769267103
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769967423
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6770067588
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_other_expenses_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6770077207
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6770549084
+                    },
+                    {
+                        "feature1": "E_G_ebit_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6770974173
+                    },
+                    {
+                        "feature1": "E_G_receivables_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6771004003
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6771389275
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6772432788
+                    },
+                    {
+                        "feature1": "E_G_total_div_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6773455376
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_tax_expense_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6774202245
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776017729
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_agro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6776087425
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6776913841
+                    },
+                    {
+                        "feature1": "E_G_int_div_income_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776921255
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_total_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6777660492
+                    },
+                    {
+                        "feature1": "E_G_net_property_on_assets_ratio",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "ratio",
+                        "score": 0.6777805596
+                    },
+                    {
+                        "feature1": "E_G_cash_equi_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779153685
+                    },
+                    {
+                        "feature1": "E_G_net_property_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779820522
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678051346
+                    },
+                    {
+                        "feature1": "E_G_tax_expense_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6780529604
+                    },
+                    {
+                        "feature1": "E_G_other_expenses_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6781099341
+                    },
+                    {
+                        "feature1": "E_G_total_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6781751734
+                    },
+                    {
+                        "feature1": "E_G_inventory_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6781800684
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_def_tax_liability_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6781936144
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678275268
+                    }
+                ],
+                "new_columns": [
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_pref_equity_on_assets_ratio",
+                    "E_G_ebitda_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_unusual_items_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_1q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_rev_gro_five_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_pref_equity_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_gross_profit_rgro_1q_sum_E_G_net_debt_agro_4q",
+                    "E_G_pref_equity_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_repurchase_stock_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_other_expenses_agro_1q",
+                    "E_G_def_tax_liability_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_def_tax_liability_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_int_div_income_on_rev_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_restructuring_charges_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_tcgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_interest_expense_on_tot_cap_ratio",
+                    "E_G_interest_expense_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_r_d_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_receivables_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_repurchase_stock_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_agro_4q_diff_E_G_gross_profit_rgro_1q",
+                    "E_G_net_property_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_total_debt_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_divestitures_agro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_def_tax_liability_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_other_expenses_agro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ebit_tcgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_receivables_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_div_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_tax_expense_tcgro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_revenues_agro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_int_div_income_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_total_div_agro_1q",
+                    "E_G_net_property_on_assets_ratio_ratio_E_G_net_debt_agro_4q",
+                    "E_G_cash_equi_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_property_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_tax_expense_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_other_expenses_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_debt_agro_4q_ratio_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_inventory_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_def_tax_liability_tcgro_1q",
+                    "E_G_repurchase_stock_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2017-2025_CashFromOps",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_pref_equity_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6718366434
+                    },
+                    {
+                        "feature1": "E_G_ebitda_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6719026349
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6737666183
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6737699047
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6739383614
+                    },
+                    {
+                        "feature1": "E_G_rev_gro_five_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6741808342
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6743035592
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6744081897
+                    },
+                    {
+                        "feature1": "E_G_gross_profit_rgro_1q",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6745396716
+                    },
+                    {
+                        "feature1": "E_G_pref_equity_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6746657442
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6748322369
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_other_expenses_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6750342514
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6750410617
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.675203593
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_int_div_income_on_rev_ratio",
+                        "operation": "sum",
+                        "score": 0.6753415068
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_restructuring_charges_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754101225
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6754575962
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6754909205
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_interest_expense_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6755626521
+                    },
+                    {
+                        "feature1": "E_G_interest_expense_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6757258869
+                    },
+                    {
+                        "feature1": "E_G_r_d_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6758336341
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6759222156
+                    },
+                    {
+                        "feature1": "E_G_receivables_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.676098396
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6762404464
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6764926265
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_agro_4q",
+                        "feature2": "E_G_gross_profit_rgro_1q",
+                        "operation": "diff",
+                        "score": 0.6765603809
+                    },
+                    {
+                        "feature1": "E_G_net_property_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6765700107
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6766655413
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6767834229
+                    },
+                    {
+                        "feature1": "E_G_total_debt_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6768634649
+                    },
+                    {
+                        "feature1": "E_G_divestitures_agro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6769141943
+                    },
+                    {
+                        "feature1": "E_G_def_tax_liability_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769267103
+                    },
+                    {
+                        "feature1": "E_G_ammor_intangibles_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6769967423
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_ammor_intangibles_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6770067588
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_other_expenses_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6770077207
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6770549084
+                    },
+                    {
+                        "feature1": "E_G_ebit_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6770974173
+                    },
+                    {
+                        "feature1": "E_G_receivables_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6771004003
+                    },
+                    {
+                        "feature1": "E_G_r_d_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6771389275
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6772432788
+                    },
+                    {
+                        "feature1": "E_G_total_div_agro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6773455376
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_tax_expense_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6774202245
+                    },
+                    {
+                        "feature1": "E_G_asset_writedown_agro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776017729
+                    },
+                    {
+                        "feature1": "E_G_total_revenues_agro_1q",
+                        "feature2": "E_G_cash_operations_tcgro_4q",
+                        "operation": "diff",
+                        "score": 0.6776087425
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_assets_ratio",
+                        "feature2": "E_G_cash_operations_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6776913841
+                    },
+                    {
+                        "feature1": "E_G_int_div_income_rgro_1q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6776921255
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_total_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6777660492
+                    },
+                    {
+                        "feature1": "E_G_net_property_on_assets_ratio",
+                        "feature2": "E_G_net_debt_agro_4q",
+                        "operation": "ratio",
+                        "score": 0.6777805596
+                    },
+                    {
+                        "feature1": "E_G_cash_equi_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779153685
+                    },
+                    {
+                        "feature1": "E_G_net_property_tcgro_1q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6779820522
+                    },
+                    {
+                        "feature1": "E_G_net_debt_agro_4q",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678051346
+                    },
+                    {
+                        "feature1": "E_G_tax_expense_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6780529604
+                    },
+                    {
+                        "feature1": "E_G_other_expenses_on_tot_cap_ratio",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6781099341
+                    },
+                    {
+                        "feature1": "E_G_total_debt_agro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6781751734
+                    },
+                    {
+                        "feature1": "E_G_inventory_rgro_4q",
+                        "feature2": "E_G_cash_operations_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6781800684
+                    },
+                    {
+                        "feature1": "E_G_cash_operations_on_tot_cap_ratio",
+                        "feature2": "E_G_def_tax_liability_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6781936144
+                    },
+                    {
+                        "feature1": "E_G_repurchase_stock_tcgro_4q",
+                        "feature2": "E_G_cash_operations_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.678275268
+                    }
+                ],
+                "new_columns": [
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_pref_equity_on_assets_ratio",
+                    "E_G_ebitda_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_unusual_items_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_1q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_rev_gro_five_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_pref_equity_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_gross_profit_rgro_1q_sum_E_G_net_debt_agro_4q",
+                    "E_G_pref_equity_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_repurchase_stock_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_other_expenses_agro_1q",
+                    "E_G_def_tax_liability_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_def_tax_liability_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_int_div_income_on_rev_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_restructuring_charges_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_tcgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_diff_E_G_interest_expense_on_tot_cap_ratio",
+                    "E_G_interest_expense_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_r_d_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_receivables_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_repurchase_stock_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_agro_4q_diff_E_G_gross_profit_rgro_1q",
+                    "E_G_net_property_rgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_total_debt_rgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_divestitures_agro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_def_tax_liability_on_assets_ratio_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ammor_intangibles_agro_4q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_ammor_intangibles_rgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_other_expenses_agro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_ebit_tcgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_receivables_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_r_d_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_revenues_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_div_agro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_tax_expense_tcgro_4q",
+                    "E_G_asset_writedown_agro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_total_revenues_agro_1q_diff_E_G_cash_operations_tcgro_4q",
+                    "E_G_cash_operations_on_assets_ratio_sum_E_G_cash_operations_agro_4q",
+                    "E_G_int_div_income_rgro_1q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_total_div_agro_1q",
+                    "E_G_net_property_on_assets_ratio_ratio_E_G_net_debt_agro_4q",
+                    "E_G_cash_equi_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_property_tcgro_1q_diff_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_net_debt_agro_4q_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_tax_expense_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_other_expenses_on_tot_cap_ratio_sum_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_total_debt_agro_4q_ratio_E_G_cash_operations_on_tot_cap_ratio",
+                    "E_G_inventory_rgro_4q_diff_E_G_cash_operations_on_assets_ratio",
+                    "E_G_cash_operations_on_tot_cap_ratio_sum_E_G_def_tax_liability_tcgro_1q",
+                    "E_G_repurchase_stock_tcgro_4q_diff_E_G_cash_operations_on_tot_cap_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2017-2025_CashFromOps",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "8d9935b1-6f03-4d11-89a1-a009e3c660d7",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.05,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "269bd761-d741-4ab5-8ed6-3dec3f67aee4",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.05,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "2e8b6bf2-8790-494b-b2a9-b11bbd57943d",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.05,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "90fcfe96-9f99-4273-af73-23aa944a9e81",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.05,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "7d47787c-61e0-412d-9071-96d36b24a517",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "seed": 1236,
+                "objective": "binary:logistic",
+                "eta": 0.05,
+                "max_depth": 8,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "E_G_total_assets_on_assets_ratio": [
+                    "remove_column"
+                ],
+                "E_G_total_revenues_on_rev_ratio": [
+                    "remove_column"
+                ],
+                "E_G_total_capital_on_tot_cap_ratio": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification",
+            "golden_features": {
+                "results_path": "AutoML_2017-2025_CashFromOps",
+                "ml_task": "binary_classification",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2017-2025_CashFromOps/X.data",
+            "y_path": "AutoML_2017-2025_CashFromOps/y.data",
+            "results_path": "AutoML_2017-2025_CashFromOps",
+            "cv_path": "AutoML_2017-2025_CashFromOps/cv.data"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "seed": 1236,
+            "objective": "binary:logistic",
+            "eta": 0.05,
+            "max_depth": 8,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "eval_metric": "auc",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "8_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "8_Xgboost_GoldenFeatures/learner_fold_0.xgboost.json",
+        "8_Xgboost_GoldenFeatures/learner_fold_1.xgboost.json",
+        "8_Xgboost_GoldenFeatures/learner_fold_2.xgboost.json",
+        "8_Xgboost_GoldenFeatures/learner_fold_3.xgboost.json",
+        "8_Xgboost_GoldenFeatures/learner_fold_4.xgboost.json"
+    ],
+    "predictions_fname": "8_Xgboost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "auc",
+    "final_loss": "-0.8697438900478758",
+    "train_time": 311.61089515686035,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "threshold": 0.3634120225906372,
+    "single_prediction_time": 0.32432007789611816
+}

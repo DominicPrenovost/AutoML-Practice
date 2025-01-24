@@ -1,0 +1,2371 @@
+{
+    "uid": "a3660929-09e1-4426-b27b-0d2e37e0514c",
+    "name": "1_Default_Xgboost_GoldenFeatures",
+    "preprocessing": [
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6544721205
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_quick_ratio_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6563513334
+                    },
+                    {
+                        "feature1": "E_G_pref_div_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6564328134
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_ammor_intangibles_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6570991884
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6571318889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6574214889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6574422645
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6577007074
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_r_d_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6577830854
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578291332
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_cost_borrowing_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578295131
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578336654
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_sga_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6578454067
+                    },
+                    {
+                        "feature1": "E_G_minority_int_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578586586
+                    },
+                    {
+                        "feature1": "E_G_cost_borrowing_on_tot_cap_ratio",
+                        "feature2": "E_G_unusual_items_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578973822
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6582059328
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_rev_ratio",
+                        "feature2": "E_G_net_income_inc_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_def_tax_assets_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6582913777
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6583093728
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_equity_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583115507
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583496718
+                    },
+                    {
+                        "feature1": "E_G_total_div_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6583880962
+                    },
+                    {
+                        "feature1": "E_G_pref_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584111368
+                    },
+                    {
+                        "feature1": "E_G_total_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584712157
+                    },
+                    {
+                        "feature1": "E_G_pref_div_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585044931
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585176022
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585795041
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6586878876
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587059589
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587099068
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587632966
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6588106983
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_revenues_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_capital_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_assets_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_assets_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_interest_expense_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588507166
+                    },
+                    {
+                        "feature1": "E_G_ebit_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588509552
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588641771
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588912269
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588942032
+                    },
+                    {
+                        "feature1": "E_G_r_d_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.658899524
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6589352126
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6589592266
+                    }
+                ],
+                "new_columns": [
+                    "E_G_net_income_inc_on_tot_cap_ratio_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_quick_ratio_rgro_4q",
+                    "E_G_pref_div_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_ammor_intangibles_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_tcgro_4q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_r_d_rgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_cost_borrowing_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_pref_div_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_sga_rgro_4q",
+                    "E_G_minority_int_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_cost_borrowing_on_tot_cap_ratio_sum_E_G_unusual_items_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_assets_on_rev_ratio_ratio_E_G_net_income_inc_on_rev_ratio",
+                    "E_G_total_assets_on_tot_cap_ratio_ratio_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_def_tax_assets_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_equity_tcgro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_rgro_4q",
+                    "E_G_total_div_on_tot_cap_ratio_sum_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_pref_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_rgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_assets_ratio",
+                    "E_G_core_banks_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_assets_ratio_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_tot_cap_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_multiply_E_G_total_revenues_on_assets_ratio",
+                    "E_G_core_banks_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_multiply_E_G_total_capital_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_1q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_ratio_E_G_total_assets_on_tot_cap_ratio",
+                    "E_G_core_banks_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_ratio_E_G_total_assets_on_rev_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_interest_expense_agro_1q",
+                    "E_G_ebit_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_4q",
+                    "E_G_r_d_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_agro_1q",
+                    "E_G_pref_div_agro_1q_diff_E_G_net_income_inc_on_assets_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2015-2023",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6544721205
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_quick_ratio_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6563513334
+                    },
+                    {
+                        "feature1": "E_G_pref_div_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6564328134
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_ammor_intangibles_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6570991884
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6571318889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6574214889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6574422645
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6577007074
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_r_d_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6577830854
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578291332
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_cost_borrowing_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578295131
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578336654
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_sga_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6578454067
+                    },
+                    {
+                        "feature1": "E_G_minority_int_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578586586
+                    },
+                    {
+                        "feature1": "E_G_cost_borrowing_on_tot_cap_ratio",
+                        "feature2": "E_G_unusual_items_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578973822
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6582059328
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_rev_ratio",
+                        "feature2": "E_G_net_income_inc_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_def_tax_assets_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6582913777
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6583093728
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_equity_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583115507
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583496718
+                    },
+                    {
+                        "feature1": "E_G_total_div_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6583880962
+                    },
+                    {
+                        "feature1": "E_G_pref_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584111368
+                    },
+                    {
+                        "feature1": "E_G_total_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584712157
+                    },
+                    {
+                        "feature1": "E_G_pref_div_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585044931
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585176022
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585795041
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6586878876
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587059589
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587099068
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587632966
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6588106983
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_revenues_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_capital_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_assets_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_assets_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_interest_expense_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588507166
+                    },
+                    {
+                        "feature1": "E_G_ebit_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588509552
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588641771
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588912269
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588942032
+                    },
+                    {
+                        "feature1": "E_G_r_d_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.658899524
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6589352126
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6589592266
+                    }
+                ],
+                "new_columns": [
+                    "E_G_net_income_inc_on_tot_cap_ratio_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_quick_ratio_rgro_4q",
+                    "E_G_pref_div_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_ammor_intangibles_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_tcgro_4q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_r_d_rgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_cost_borrowing_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_pref_div_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_sga_rgro_4q",
+                    "E_G_minority_int_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_cost_borrowing_on_tot_cap_ratio_sum_E_G_unusual_items_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_assets_on_rev_ratio_ratio_E_G_net_income_inc_on_rev_ratio",
+                    "E_G_total_assets_on_tot_cap_ratio_ratio_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_def_tax_assets_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_equity_tcgro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_rgro_4q",
+                    "E_G_total_div_on_tot_cap_ratio_sum_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_pref_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_rgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_assets_ratio",
+                    "E_G_core_banks_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_assets_ratio_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_tot_cap_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_multiply_E_G_total_revenues_on_assets_ratio",
+                    "E_G_core_banks_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_multiply_E_G_total_capital_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_1q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_ratio_E_G_total_assets_on_tot_cap_ratio",
+                    "E_G_core_banks_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_ratio_E_G_total_assets_on_rev_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_interest_expense_agro_1q",
+                    "E_G_ebit_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_4q",
+                    "E_G_r_d_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_agro_1q",
+                    "E_G_pref_div_agro_1q_diff_E_G_net_income_inc_on_assets_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2015-2023",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6544721205
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_quick_ratio_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6563513334
+                    },
+                    {
+                        "feature1": "E_G_pref_div_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6564328134
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_ammor_intangibles_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6570991884
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6571318889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6574214889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6574422645
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6577007074
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_r_d_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6577830854
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578291332
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_cost_borrowing_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578295131
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578336654
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_sga_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6578454067
+                    },
+                    {
+                        "feature1": "E_G_minority_int_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578586586
+                    },
+                    {
+                        "feature1": "E_G_cost_borrowing_on_tot_cap_ratio",
+                        "feature2": "E_G_unusual_items_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578973822
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6582059328
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_rev_ratio",
+                        "feature2": "E_G_net_income_inc_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_def_tax_assets_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6582913777
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6583093728
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_equity_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583115507
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583496718
+                    },
+                    {
+                        "feature1": "E_G_total_div_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6583880962
+                    },
+                    {
+                        "feature1": "E_G_pref_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584111368
+                    },
+                    {
+                        "feature1": "E_G_total_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584712157
+                    },
+                    {
+                        "feature1": "E_G_pref_div_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585044931
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585176022
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585795041
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6586878876
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587059589
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587099068
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587632966
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6588106983
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_revenues_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_capital_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_assets_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_assets_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_interest_expense_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588507166
+                    },
+                    {
+                        "feature1": "E_G_ebit_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588509552
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588641771
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588912269
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588942032
+                    },
+                    {
+                        "feature1": "E_G_r_d_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.658899524
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6589352126
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6589592266
+                    }
+                ],
+                "new_columns": [
+                    "E_G_net_income_inc_on_tot_cap_ratio_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_quick_ratio_rgro_4q",
+                    "E_G_pref_div_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_ammor_intangibles_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_tcgro_4q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_r_d_rgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_cost_borrowing_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_pref_div_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_sga_rgro_4q",
+                    "E_G_minority_int_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_cost_borrowing_on_tot_cap_ratio_sum_E_G_unusual_items_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_assets_on_rev_ratio_ratio_E_G_net_income_inc_on_rev_ratio",
+                    "E_G_total_assets_on_tot_cap_ratio_ratio_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_def_tax_assets_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_equity_tcgro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_rgro_4q",
+                    "E_G_total_div_on_tot_cap_ratio_sum_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_pref_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_rgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_assets_ratio",
+                    "E_G_core_banks_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_assets_ratio_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_tot_cap_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_multiply_E_G_total_revenues_on_assets_ratio",
+                    "E_G_core_banks_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_multiply_E_G_total_capital_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_1q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_ratio_E_G_total_assets_on_tot_cap_ratio",
+                    "E_G_core_banks_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_ratio_E_G_total_assets_on_rev_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_interest_expense_agro_1q",
+                    "E_G_ebit_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_4q",
+                    "E_G_r_d_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_agro_1q",
+                    "E_G_pref_div_agro_1q_diff_E_G_net_income_inc_on_assets_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2015-2023",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6544721205
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_quick_ratio_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6563513334
+                    },
+                    {
+                        "feature1": "E_G_pref_div_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6564328134
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_ammor_intangibles_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6570991884
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6571318889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6574214889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6574422645
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6577007074
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_r_d_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6577830854
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578291332
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_cost_borrowing_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578295131
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578336654
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_sga_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6578454067
+                    },
+                    {
+                        "feature1": "E_G_minority_int_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578586586
+                    },
+                    {
+                        "feature1": "E_G_cost_borrowing_on_tot_cap_ratio",
+                        "feature2": "E_G_unusual_items_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578973822
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6582059328
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_rev_ratio",
+                        "feature2": "E_G_net_income_inc_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_def_tax_assets_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6582913777
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6583093728
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_equity_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583115507
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583496718
+                    },
+                    {
+                        "feature1": "E_G_total_div_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6583880962
+                    },
+                    {
+                        "feature1": "E_G_pref_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584111368
+                    },
+                    {
+                        "feature1": "E_G_total_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584712157
+                    },
+                    {
+                        "feature1": "E_G_pref_div_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585044931
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585176022
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585795041
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6586878876
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587059589
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587099068
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587632966
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6588106983
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_revenues_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_capital_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_assets_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_assets_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_interest_expense_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588507166
+                    },
+                    {
+                        "feature1": "E_G_ebit_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588509552
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588641771
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588912269
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588942032
+                    },
+                    {
+                        "feature1": "E_G_r_d_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.658899524
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6589352126
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6589592266
+                    }
+                ],
+                "new_columns": [
+                    "E_G_net_income_inc_on_tot_cap_ratio_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_quick_ratio_rgro_4q",
+                    "E_G_pref_div_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_ammor_intangibles_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_tcgro_4q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_r_d_rgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_cost_borrowing_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_pref_div_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_sga_rgro_4q",
+                    "E_G_minority_int_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_cost_borrowing_on_tot_cap_ratio_sum_E_G_unusual_items_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_assets_on_rev_ratio_ratio_E_G_net_income_inc_on_rev_ratio",
+                    "E_G_total_assets_on_tot_cap_ratio_ratio_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_def_tax_assets_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_equity_tcgro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_rgro_4q",
+                    "E_G_total_div_on_tot_cap_ratio_sum_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_pref_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_rgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_assets_ratio",
+                    "E_G_core_banks_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_assets_ratio_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_tot_cap_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_multiply_E_G_total_revenues_on_assets_ratio",
+                    "E_G_core_banks_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_multiply_E_G_total_capital_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_1q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_ratio_E_G_total_assets_on_tot_cap_ratio",
+                    "E_G_core_banks_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_ratio_E_G_total_assets_on_rev_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_interest_expense_agro_1q",
+                    "E_G_ebit_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_4q",
+                    "E_G_r_d_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_agro_1q",
+                    "E_G_pref_div_agro_1q_diff_E_G_net_income_inc_on_assets_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2015-2023",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        },
+        {
+            "remove_columns": [
+                "E_G_total_assets_on_assets_ratio",
+                "E_G_total_revenues_on_rev_ratio",
+                "E_G_total_capital_on_tot_cap_ratio"
+            ],
+            "golden_features": {
+                "new_features": [
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_norm_net_inc_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6544721205
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_quick_ratio_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6563513334
+                    },
+                    {
+                        "feature1": "E_G_pref_div_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6564328134
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_ammor_intangibles_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6570991884
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6571318889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6574214889
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_retained_earnings_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6574422645
+                    },
+                    {
+                        "feature1": "E_G_r_d_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6577007074
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_r_d_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6577830854
+                    },
+                    {
+                        "feature1": "E_G_minority_int_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578291332
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_cost_borrowing_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578295131
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578336654
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_sga_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6578454067
+                    },
+                    {
+                        "feature1": "E_G_minority_int_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6578586586
+                    },
+                    {
+                        "feature1": "E_G_cost_borrowing_on_tot_cap_ratio",
+                        "feature2": "E_G_unusual_items_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6578973822
+                    },
+                    {
+                        "feature1": "E_G_unusual_items_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6582059328
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_rev_ratio",
+                        "feature2": "E_G_net_income_inc_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_total_assets_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6582134801
+                    },
+                    {
+                        "feature1": "E_G_def_tax_assets_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6582913777
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_tot_cap_ratio",
+                        "operation": "diff",
+                        "score": 0.6583093728
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_equity_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583115507
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_int_div_income_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6583496718
+                    },
+                    {
+                        "feature1": "E_G_total_div_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "operation": "sum",
+                        "score": 0.6583880962
+                    },
+                    {
+                        "feature1": "E_G_pref_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584111368
+                    },
+                    {
+                        "feature1": "E_G_total_div_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6584712157
+                    },
+                    {
+                        "feature1": "E_G_pref_div_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585044931
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585176022
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6585795041
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6586878876
+                    },
+                    {
+                        "feature1": "E_G_core_banks_rgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587059589
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_assets_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587099068
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587632966
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_provision_loan_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6587958157
+                    },
+                    {
+                        "feature1": "E_G_core_banks_on_tot_cap_ratio",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "sum",
+                        "score": 0.6588106983
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_revenues_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_capital_on_assets_ratio",
+                        "operation": "multiply",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_tot_cap_ratio",
+                        "feature2": "E_G_total_assets_on_tot_cap_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_4q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_tcgro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_core_banks_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_4q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_rev_ratio",
+                        "feature2": "E_G_total_assets_on_rev_ratio",
+                        "operation": "ratio",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588382919
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_interest_expense_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588507166
+                    },
+                    {
+                        "feature1": "E_G_ebit_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6588509552
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588641771
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_provision_loan_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588829629
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_tcgro_1q",
+                        "operation": "sum",
+                        "score": 0.6588912269
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_core_banks_rgro_4q",
+                        "operation": "sum",
+                        "score": 0.6588942032
+                    },
+                    {
+                        "feature1": "E_G_r_d_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.658899524
+                    },
+                    {
+                        "feature1": "E_G_net_income_inc_on_assets_ratio",
+                        "feature2": "E_G_pref_div_agro_1q",
+                        "operation": "sum",
+                        "score": 0.6589352126
+                    },
+                    {
+                        "feature1": "E_G_pref_div_agro_1q",
+                        "feature2": "E_G_net_income_inc_on_assets_ratio",
+                        "operation": "diff",
+                        "score": 0.6589592266
+                    }
+                ],
+                "new_columns": [
+                    "E_G_net_income_inc_on_tot_cap_ratio_diff_E_G_norm_net_inc_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_quick_ratio_rgro_4q",
+                    "E_G_pref_div_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_ammor_intangibles_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_tcgro_4q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_retained_earnings_agro_4q",
+                    "E_G_r_d_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_r_d_rgro_1q",
+                    "E_G_minority_int_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_cost_borrowing_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_pref_div_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_sum_E_G_sga_rgro_4q",
+                    "E_G_minority_int_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_cost_borrowing_on_tot_cap_ratio_sum_E_G_unusual_items_on_assets_ratio",
+                    "E_G_unusual_items_on_assets_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_assets_on_rev_ratio_ratio_E_G_net_income_inc_on_rev_ratio",
+                    "E_G_total_assets_on_tot_cap_ratio_ratio_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_def_tax_assets_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_tot_cap_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_equity_tcgro_4q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_int_div_income_rgro_4q",
+                    "E_G_total_div_on_tot_cap_ratio_sum_E_G_net_income_inc_on_tot_cap_ratio",
+                    "E_G_pref_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_total_div_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_pref_div_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_rgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_diff_E_G_provision_loan_on_assets_ratio",
+                    "E_G_core_banks_rgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_assets_ratio_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_provision_loan_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_on_tot_cap_ratio_sum_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_multiply_E_G_total_revenues_on_assets_ratio",
+                    "E_G_core_banks_agro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_tot_cap_ratio_multiply_E_G_total_capital_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_tcgro_1q",
+                    "E_G_net_income_inc_on_tot_cap_ratio_ratio_E_G_total_assets_on_tot_cap_ratio",
+                    "E_G_core_banks_tcgro_4q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_tcgro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_core_banks_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_4q",
+                    "E_G_net_income_inc_on_rev_ratio_ratio_E_G_total_assets_on_rev_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_interest_expense_agro_1q",
+                    "E_G_ebit_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_agro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_provision_loan_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_tcgro_1q",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_core_banks_rgro_4q",
+                    "E_G_r_d_agro_1q_diff_E_G_net_income_inc_on_assets_ratio",
+                    "E_G_net_income_inc_on_assets_ratio_sum_E_G_pref_div_agro_1q",
+                    "E_G_pref_div_agro_1q_diff_E_G_net_income_inc_on_assets_ratio"
+                ],
+                "ml_task": "binary_classification"
+            },
+            "ml_task": "binary_classification",
+            "params": {
+                "columns_preprocessing": {
+                    "E_G_total_assets_on_assets_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_revenues_on_rev_ratio": [
+                        "remove_column"
+                    ],
+                    "E_G_total_capital_on_tot_cap_ratio": [
+                        "remove_column"
+                    ]
+                },
+                "target_preprocessing": [
+                    "na_exclude"
+                ],
+                "ml_task": "binary_classification",
+                "golden_features": {
+                    "results_path": "AutoML_2015-2023",
+                    "ml_task": "binary_classification",
+                    "n_jobs": -1
+                }
+            }
+        }
+    ],
+    "learners": [
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "76f68e4c-2b43-4583-8511-5f8a048a248d",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_0"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "34cce69b-2597-400c-85d9-62248edc6644",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_1"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "8513cac2-b7e3-40cb-9fa6-09a032c1fc57",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_2"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "a991af29-edef-460e-958a-c6849efad1f7",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_3"
+        },
+        {
+            "library_version": "2.1.1",
+            "algorithm_name": "Extreme Gradient Boosting",
+            "algorithm_short_name": "Xgboost",
+            "uid": "ae8d9b1b-2c17-40ea-b5e3-79e1e7f29578",
+            "params": {
+                "model_type": "Xgboost",
+                "ml_task": "binary_classification",
+                "n_jobs": -1,
+                "objective": "binary:logistic",
+                "eta": 0.075,
+                "max_depth": 6,
+                "min_child_weight": 1,
+                "subsample": 1.0,
+                "colsample_bytree": 1.0,
+                "seed": 1,
+                "eval_metric": "auc",
+                "explain_level": 1
+            },
+            "name": "learner_fold_4"
+        }
+    ],
+    "params": {
+        "additional": {
+            "max_rounds": 10000,
+            "early_stopping_rounds": 50,
+            "max_rows_limit": null,
+            "max_cols_limit": null
+        },
+        "preprocessing": {
+            "columns_preprocessing": {
+                "E_G_total_assets_on_assets_ratio": [
+                    "remove_column"
+                ],
+                "E_G_total_revenues_on_rev_ratio": [
+                    "remove_column"
+                ],
+                "E_G_total_capital_on_tot_cap_ratio": [
+                    "remove_column"
+                ]
+            },
+            "target_preprocessing": [
+                "na_exclude"
+            ],
+            "ml_task": "binary_classification",
+            "golden_features": {
+                "results_path": "AutoML_2015-2023",
+                "ml_task": "binary_classification",
+                "n_jobs": -1
+            }
+        },
+        "validation_strategy": {
+            "validation_type": "kfold",
+            "k_folds": 5,
+            "shuffle": true,
+            "stratify": true,
+            "X_path": "AutoML_2015-2023/X.data",
+            "y_path": "AutoML_2015-2023/y.data",
+            "results_path": "AutoML_2015-2023",
+            "cv_path": "AutoML_2015-2023/cv.data"
+        },
+        "learner": {
+            "model_type": "Xgboost",
+            "ml_task": "binary_classification",
+            "n_jobs": -1,
+            "objective": "binary:logistic",
+            "eta": 0.075,
+            "max_depth": 6,
+            "min_child_weight": 1,
+            "subsample": 1.0,
+            "colsample_bytree": 1.0,
+            "seed": 1,
+            "eval_metric": "auc",
+            "explain_level": 1
+        },
+        "automl_random_state": 1234,
+        "ml_task": "binary_classification",
+        "explain_level": 1,
+        "name": "1_Default_Xgboost_GoldenFeatures",
+        "status": "initialized",
+        "final_loss": null,
+        "train_time": null,
+        "data_type": "original_golden_features",
+        "max_time_for_learner": 72.0
+    },
+    "saved": [
+        "1_Default_Xgboost_GoldenFeatures/learner_fold_0.xgboost.json",
+        "1_Default_Xgboost_GoldenFeatures/learner_fold_1.xgboost.json",
+        "1_Default_Xgboost_GoldenFeatures/learner_fold_2.xgboost.json",
+        "1_Default_Xgboost_GoldenFeatures/learner_fold_3.xgboost.json",
+        "1_Default_Xgboost_GoldenFeatures/learner_fold_4.xgboost.json"
+    ],
+    "predictions_fname": "1_Default_Xgboost_GoldenFeatures/predictions_out_of_folds.csv",
+    "metric_name": "auc",
+    "final_loss": "-0.8923566361885902",
+    "train_time": 1236.377727985382,
+    "is_stacked": false,
+    "joblib_version": "1.4.2",
+    "threshold": 0.45973482728004456,
+    "single_prediction_time": 0.15289807319641113
+}

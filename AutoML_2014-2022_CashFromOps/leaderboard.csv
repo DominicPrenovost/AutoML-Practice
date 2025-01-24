@@ -1,0 +1,15 @@
+name,model_type,metric_type,metric_value,train_time,single_prediction_time
+1_Default_Xgboost,Xgboost,auc,0.8745542350203028,121.11,0.1531
+2_Xgboost,Xgboost,auc,0.8699058281714984,96.78,0.1547
+3_Xgboost,Xgboost,auc,0.8784204093713464,109.63,0.1786
+4_Xgboost,Xgboost,auc,0.8583329553706317,97.18,0.1684
+5_Xgboost,Xgboost,auc,0.8297554348642906,80.02,0.1761
+3_Xgboost_GoldenFeatures,Xgboost,auc,0.8796057983731195,313.94,0.1546
+1_Default_Xgboost_GoldenFeatures,Xgboost,auc,0.8757407595801188,110.9,0.1553
+2_Xgboost_GoldenFeatures,Xgboost,auc,0.8735408830620363,116.83,0.1531
+6_Xgboost_GoldenFeatures,Xgboost,auc,0.8787002242326349,141.33,0.1542
+7_Xgboost_GoldenFeatures,Xgboost,auc,0.875619455262119,104.09,0.1583
+8_Xgboost,Xgboost,auc,0.8776944537942435,117.46,0.1031
+9_Xgboost,Xgboost,auc,0.8767160369451806,108.89,0.0975
+10_Xgboost_GoldenFeatures,Xgboost,auc,0.8729318565645909,115.97,0.1664
+Ensemble,Ensemble,auc,0.8845859885630603,1.16,0.623
